@@ -16,6 +16,10 @@ _object = typeOf _object;
 
 try
 {
+    if(damage _vehicleObj == 1)then
+    {
+    	throw "You cannot claim Destroyed vehicles!";
+	};
     if(ExilePlayerInSafezone)then
     {
     	throw "You cannot do that in traders";
